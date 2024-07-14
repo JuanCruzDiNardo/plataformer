@@ -16,8 +16,8 @@ GameObject:
   - component: {fileID: 1109032673133515908}
   - component: {fileID: 64693252013773337}
   m_Layer: 0
-  m_Name: Barrier
-  m_TagString: Barrier
+  m_Name: Button
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.178, y: -0.001, z: 0}
-  m_LocalScale: {x: 5, y: 15, z: 0.95}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -65,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2118fda142f82704ba78738b1214029b, type: 2}
+  - {fileID: 2100000, guid: b7be0abaa2fa70c4689f01e6f07ad2ef, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -139,8 +139,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggered: 0
   closed: 0
-  direction: 1
-  distance: 20
+  direction: 0
+  distance: 0
   rb: {fileID: 0}
 --- !u!54 &64693252013773337
 Rigidbody:

@@ -8,6 +8,8 @@ TagManager:
   - Water
   - Target
   - Trampoline
+  - HitBoxRef
+  - Barrier
   layers:
   - Default
   - TransparentFX

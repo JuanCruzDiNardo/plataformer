@@ -12,8 +12,7 @@ public class Controller_Player : MonoBehaviour
     public int playerNumber;
 
     public Rigidbody rb;
-
-    private BoxCollider col;
+    
 
     public LayerMask floor;
 
@@ -26,8 +25,7 @@ public class Controller_Player : MonoBehaviour
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        col = GetComponent<BoxCollider>();
+        rb = GetComponent<Rigidbody>();        
         rb.constraints = RigidbodyConstraints.FreezePositionX| RigidbodyConstraints.FreezePositionZ|RigidbodyConstraints.FreezeRotation;
     }
 
@@ -39,14 +37,14 @@ public class Controller_Player : MonoBehaviour
         }
     }
 
-    private void Update()
+    public virtual void Update()
     {
         if (GameManager.actualPlayer == playerNumber)
         {
             Jump();
             if (SomethingLeft())
             {
-                canMoveLeft = false;
+                //canMoveLeft = false;
             }
             else
             {
@@ -54,7 +52,7 @@ public class Controller_Player : MonoBehaviour
             }
             if (SomethingRight())
             {
-                canMoveRight = false;
+                //canMoveRight = false;
             }
             else
             {
